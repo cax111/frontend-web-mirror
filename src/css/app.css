@@ -1,0 +1,202 @@
+/* app global css */
+@font-face {
+  font-family: asap;
+  src: url(./fonts/Asap-Regular.ttf);
+  font-display: swap;
+}
+body{
+  background-color: #F5F5F5;
+}
+/* Color */
+.text-light-primary {
+  color: var(--q-color-lightprimary) !important;
+}
+.bg-light-primary {
+  background: var(--q-color-lightprimary) !important;
+}
+/* Common Use */
+.my-font {
+}
+
+.bg-banner {
+  background: var(--q-color-banner);
+}
+
+.border-5 {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.border-10 {
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.border-15 {
+  border-radius: 15px;
+  border: 1px solid #eee;
+}
+
+.border-custom {
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.border-primary-10 {
+  border-radius: 10px;
+  border: 2px solid var(--q-color-primary);
+}
+
+.border-secondary-10 {
+  border-radius: 10px;
+  border: 2px solid var(--q-color-secondary);
+}
+
+.radius-5 {
+  border-radius: 10px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.radius-10 {
+  border-radius: 10px !important;
+}
+
+.radius-15 {
+  border-radius: 10px;
+}
+
+.package-tag {
+  border-radius: 0px 10px 0px 10px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 8px 10px;
+}
+
+.package-tag-group {
+  border-radius: 0px 0px 0px 10px;
+  margin-right: -8px;
+  margin-top: -1px;
+  padding: 8px 18px 8px 10px;
+}
+.drawer-active {
+  animation-timing-function: ease;
+  animation: drawer-active-desktop 0.2s;
+  position: absolute;
+  border-left: 7px solid var(--q-color-primary);
+  border-radius: 10px;
+  right: -18px;
+  height: 70%;
+}
+.comma-list::after {
+  content: ", ";
+}
+.comma-list:last-child::after {
+  content: "";
+}
+@media only screen and (max-width: 1024px) {
+  .drawer-active {
+    animation-timing-function: ease;
+    animation: drawer-active-tablet 0.2s;
+    position: absolute;
+    border-left: 7px solid var(--q-color-primary);
+    border-radius: 10px;
+    right: -24px;
+    height: 100%;
+  }
+}
+
+@keyframes drawer-active-desktop {
+  from {
+    right: -23px;
+  }
+  to {
+    right: -18px;
+  }
+}
+
+@keyframes drawer-active-tablet {
+  from {
+    right: -27px;
+  }
+  to {
+    right: -24px;
+  }
+}
+
+/* Help pages */
+.rounded-8 > .q-field__inner > .q-field__control {
+  border-radius: 8px;
+}
+.q-field--dark .q-field__native,
+.q-field--dark .q-field__prefix,
+.q-field--dark .q-field__suffix,
+.q-field--dark .q-field__input {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.q-field--dark:not(.q-field--highlighted) .q-field__label,
+.q-field--dark .q-field__marginal,
+.q-field--dark .q-field__bottom {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+@media screen and (max-width: 599px) {
+  .mobile-margin {
+    margin: 0 0 30px 0;
+  }
+  .mobile-header {
+    padding-bottom: 40px;
+    border-radius: 0 !important;
+  }
+  .mobile-header-margin {
+    margin-bottom: 30px;
+  }
+  .mobile-input {
+    margin-bottom: -35px;
+  }
+  .mobile-input > .q-field__inner > .q-field__control {
+    box-shadow: 0 7px 9px -7px rgb(0 0 0 / 70%) !important;
+  }
+  .mobile-content {
+    margin-top: -25px;
+    border-radius: 30px 30px 0 0;
+    min-height: calc(100vh - 142px);
+  }
+  .mobile-subtitle {
+    margin-top: 20px;
+  }
+    .wrapper-post {
+      padding-top: 18px;
+    }
+    .container-post {
+      min-height: 90vh;
+      border-radius: 24px 10px 0 0;
+      padding-bottom: 50px;
+    }
+}
+/* Liveclass Pages */
+.btn-add {
+  position: fixed;
+  float: right;
+  bottom: 60px;
+  right: 450px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .btn-add {
+    position: fixed;
+    float: right;
+    bottom: 60px;
+    right: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .btn-add {
+    position: fixed;
+    float: right;
+    bottom: 70px;
+    right: 40px;
+  }
+}

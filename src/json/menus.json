@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Home",
+    "icon": "home",
+    "icon_active": "home",
+    "route_name": "home",
+    "is_active": false
+  },
+  {
+    "name": "Bank",
+    "icon": "img:/img/icons/menu/ic_tryout.png",
+    "icon_active": "img:/img/icons/menu/ic_tryout_blue.png",
+    "route_name": "bank",
+    "is_active": false
+  },
+  {
+    "name": "Request",
+    "icon": "img:/img/icons/menu/ic_latsol.png",
+    "icon_active": "img:/img/icons/menu/ic_latsol_active.png",
+    "route_name": "request",
+    "is_active": false
+  },
+  {
+    "name": "Akun",
+    "icon": "img:/img/icons/menu/ic_account.png",
+    "icon_active": "img:/img/icons/menu/ic_account_active.svg",
+    "route_name": "akun",
+    "is_active": false
+  }
+]

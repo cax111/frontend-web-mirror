@@ -1,0 +1,13 @@
+FROM node:14.4.0-alpine3.12 as build-stage
+WORKDIR /app
+COPY package*.json ./
+COPY .env.bank ./.env
+RUN npm install
+RUN npm install -g @quasar/cli@1.4.0
+COPY ./ .
+RUN quasar build
+
+FROM nginx as production-stage
+RUN mkdir /app
+COPY --from=build-stage /app/dist/spa /app
+COPY nginx.conf /etc/nginx/nginx.conf
